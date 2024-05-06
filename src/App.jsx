@@ -84,7 +84,7 @@ function App() {
       {/* results */}
       <div>
         <h1 className="pb-2">Search results</h1>
-        <div className="border w-96 h-96 bg-white">
+        <div className="border w-96 h-64 bg-white">
           {" "}
           <ul>
             {ninjas &&
