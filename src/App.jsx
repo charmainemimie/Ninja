@@ -21,8 +21,10 @@ function App() {
       .catch((error) => console.error("Error fetching data:", error)); //data is the returned object
   };
   useEffect(() => {
-    handleSubmit();
-  }, []);
+    if (latitude && longitude) {
+      handleSubmit();
+    }
+  }, [latitude, longitude]);
 
   return (
     <div className="flex flex-col items-center  bg-gray-400 min-h-screen pt-8">
